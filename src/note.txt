@@ -1,0 +1,2 @@
+npm install --save bootstrap font-awesome
+npm install @agm/core --save

@@ -4,13 +4,14 @@
       <div class="menu navi menu-logo">
           <div class="navbar-brand">
               <span class="navbar-logo">
-                  <a href="index.html">
+                  <a routerLink="main">
                        <img src="assets/images/moph.png" media-simple="true" style="height: 12rem;">
                   </a>
               </span>
           </div>
       </div>
       <div class="container">
+            
         <!-- <a class="navbar-brand " href="index.html"><img src="assets/images/moph.png"></a> -->
           <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -20,17 +21,102 @@
                   <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" align="center" href="index.html">โรงพยาบาลบางปะหัน</a>
+              <a class="navbar-brand" align="center" routerLink="main">โรงพยาบาลบางปะหัน</a>
+              
           </div>
-  
           <div class="collapse navbar-collapse navbar-right">
-              <ul class="nav navbar-nav">
-                  <li class="active"><a href="index.html">หน้าหลัก</a></li>
-                  <li><a href="about-us.html">ข้อมูลทั่วไป</a></li>
-                  <li><a href="services.html">ข้อมูลบริการ</a></li>
-                  
-                  <li><a href="blog.html">คลังความรู้</a></li>
-                  <li><a href="contact-us.html">ติดต่อเรา</a></li>                        
+                <ul class="nav">
+                    <button class="btn-primary dropdown-toggle"  routerLinkActive="active" routerLink="login">
+                        <a style="color:rgb(245, 245, 245);" >
+                                <i class="fa fa-user-circle-o fa-lg"></i>
+                            </a> 
+                </button> 
+                </ul> 
+          </div>
+          <div class=" navbar-collapse navbar-right">
+               
+              <ul class="nav navbar-nav">                   
+                    <li class="dropdown">
+                        <button class="btn-primary"  routerLinkActive="active" routerLink="main">
+                            <a style="color:rgb(245, 245, 245);">หน้าหลัก</a>
+                        </button>
+                    </li>
+                    <li class="dropdown">
+                        <button class="btn-primary"  routerLinkActive="active">
+                            <a href = "https://www.ayo.moph.go.th/e_purchase/index.php?mod=News&off_id_list=10773" style="color:rgb(245, 245, 245);">ประกาศจัดซื้อจัดจ้าง</a>
+                        </button>
+                    </li>
+                    <li class="dropdown">
+                        <button class="btn-primary"  routerLinkActive="active" routerLink="#">
+                            <a style="color:rgb(245, 245, 245);">คลังความรู้</a>
+                        </button>
+                    </li>
+                    <li class="dropdown" dropdown>
+                        <button class="btn-primary dropdown-toggle" data-toggle="dropdown"  routerLinkActive="active" routerLink="about">
+                            <a style="color:rgb(245, 245, 245);">ข้อมูลทั่วไป</a>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li routerLinkActive="active"><a routerLink="story">ประวัติความเป็นมา</a></li>
+                            <li routerLinkActive="active"><a routerLink="#">วิสัยทัศน์/พันธกิจ และค่านิยม</a></li>
+                            <li routerLinkActive="active"><a routerLink="#">รางวัลและมาตรฐาน</a></li>
+                            <li routerLinkActive="active"><a routerLink="#">โครงสร้างองค์กร</a></li>
+                            <li routerLinkActive="active"><a routerLink="#">หน่วยงานภายใน</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" dropdown>
+                        <button class="btn-primary dropdown-toggle" data-toggle="dropdown"  routerLinkActive="active" routerLink="services">
+                            <a style="color:rgb(245, 245, 245);">ข้อมูลการให้บริการ</a>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li routerLinkActive="active"><a routerLink="service">บริการภายในโรงพยาบาล</a></li>
+                            <li routerLinkActive="active"><a routerLink="#">ขั้นตอนการรับบริการ</a></li>
+                            <li routerLinkActive="active"><a routerLink="#">แพ็คเกจตรวจสุขภาพ</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown" dropdown>
+                        <button class="btn-primary dropdown-toggle" data-toggle="dropdown"  routerLinkActive="active" routerLink="contact">
+                            <a style="color:rgb(245, 245, 245);">ติดต่อเรา</a>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li routerLinkActive="active"><a routerLink="contact">ข้อมูลติดต่อ</a></li>
+                            <li routerLinkActive="active"><a routerLink="complaint">เสนอแนะ/ร้องเรียน</a></li>
+                            <li routerLinkActive="active"><a routerLink="#">ช่องทางบริจาค</a></li>
+                            <li routerLinkActive="active"><a routerLink="#">คำถามที่พบบ่อย</a></li>
+                        </ul>
+                    </li>
+                              <!-- <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="fa fa-dashboard"></i>
+                                        <p class="hidden-lg hidden-md">{{getTitle()}}</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown" routerLinkActive="active" >
+                                    <a class="dropdown-toggle" data-toggle="dropdown" routerLink="main" >
+                                        <i class="fa fa-globe"></i>
+                                        <b class="caret"></b>
+                                        <span class="notification hidden-sm hidden-xs">5</span>
+
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Notification 1</a></li>
+                                        <li><a href="#">Notification 2</a></li>
+                                        <li><a href="#">Notification 3</a></li>
+                                        <li><a href="#">Notification 4</a></li>
+                                        <li><a href="#">Another notification</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-search"></i>
+                                        <p class="hidden-lg hidden-md">Search</p>
+                                    </a>
+                                </li> -->
+                <!-- <li><a  routerLink="main">หน้าหลัก</a></li>
+                <li routerLinkActive="active" ><a routerLink="about">ข้อมูลทั่วไป</a></li>
+                <li routerLinkActive="active" ><a routerLink="services">ข้อมูลบริการ</a></li>
+                <li routerLinkActive="active" ><a routerLink="knowledge">คลังความรู้</a></li>
+                <li routerLinkActive="active" ><a routerLink="contact">ติดต่อเรา</a></li>                         -->
               </ul>
           </div>
       </div>
