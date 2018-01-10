@@ -5,6 +5,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ComplaintComponent } from './complaint/complaint.component';
 import { ServiceComponent } from './service/service.component';
 import { StoryComponent } from './story/story.component';
+import { VisionComponent } from './story/vision/vision.component';
+import { StructureComponent } from './structure/structure.component';
+import { IndepComponent } from './indep/indep.component';
 
 const routes: Routes = [
   {
@@ -30,6 +33,18 @@ const routes: Routes = [
   {
     path: 'story',
     component: StoryComponent
+  },
+  {
+    path: 'vision',
+    component: VisionComponent
+  },
+  {
+    path: 'structure',
+    component: StructureComponent
+  },
+  {
+    path: 'indep',
+    component: IndepComponent
   },
   {
     path: '**',

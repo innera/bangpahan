@@ -1863,14 +1863,13 @@ ul.sidebar-gallery {
   float:right; 
   margin:0 0 10px 0;
 }
-.imgl{
-  display:block; 
-  float:left; 
-  margin:0 0 10px 0;
-}
 
 .ptab { 
   text-indent: 50px;
   text-align:justify;
-  margin-right:20;
+  font-size: 18px;
  }
+
+ @media only screen and (max-width: 950px) {
+  
+  }
