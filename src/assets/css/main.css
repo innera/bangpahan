@@ -1870,6 +1870,6 @@ ul.sidebar-gallery {
   font-size: 18px;
  }
 
- @media only screen and (max-width: 950px) {
-  
-  }
+ .alink {
+  color:rgb(7, 7, 7); 
+ }
