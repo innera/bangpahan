@@ -1861,7 +1861,12 @@ ul.sidebar-gallery {
 .imgr{
   display:block; 
   float:right; 
-  margin:0 0 10px 0;
+  border-radius: 10px;
+  border: 100px
+}
+.imgc{
+  display:block; 
+  margin: auto;
 }
 
 .ptab { 
