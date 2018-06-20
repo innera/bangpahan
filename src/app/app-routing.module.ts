@@ -8,6 +8,7 @@ import { StoryComponent } from './story/story.component';
 import { VisionComponent } from './story/vision/vision.component';
 import { StructureComponent } from './structure/structure.component';
 import { IndepComponent } from './indep/indep.component';
+import { InhosappComponent } from './inhosapp/inhosapp.component';
 
 const routes: Routes = [
   {
@@ -45,6 +46,10 @@ const routes: Routes = [
   {
     path: 'indep',
     component: IndepComponent
+  },
+  {
+    path: 'inapp',
+    component: InhosappComponent
   },
   {
     path: '**',

@@ -16,6 +16,7 @@ import { StoryComponent } from './story/story.component';
 import { VisionComponent } from './story/vision/vision.component';
 import { StructureComponent } from './structure/structure.component';
 import { IndepComponent } from './indep/indep.component';
+import { InhosappComponent } from './inhosapp/inhosapp.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { IndepComponent } from './indep/indep.component';
     StoryComponent,
     VisionComponent,
     StructureComponent,
-    IndepComponent
+    IndepComponent,
+    InhosappComponent
   ],
   imports: [
     BrowserModule,
