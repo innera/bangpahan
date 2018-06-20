@@ -17,6 +17,7 @@ import { VisionComponent } from './story/vision/vision.component';
 import { StructureComponent } from './structure/structure.component';
 import { IndepComponent } from './indep/indep.component';
 import { InhosappComponent } from './inhosapp/inhosapp.component';
+import { KnowledgeComponent } from './knowledge/knowledge.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { InhosappComponent } from './inhosapp/inhosapp.component';
     VisionComponent,
     StructureComponent,
     IndepComponent,
-    InhosappComponent
+    InhosappComponent,
+    KnowledgeComponent
   ],
   imports: [
     BrowserModule,

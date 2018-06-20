@@ -9,6 +9,7 @@ import { VisionComponent } from './story/vision/vision.component';
 import { StructureComponent } from './structure/structure.component';
 import { IndepComponent } from './indep/indep.component';
 import { InhosappComponent } from './inhosapp/inhosapp.component';
+import { KnowledgeComponent } from './knowledge/knowledge.component';
 
 const routes: Routes = [
   {
@@ -50,6 +51,10 @@ const routes: Routes = [
   {
     path: 'inapp',
     component: InhosappComponent
+  },
+  {
+    path: 'km',
+    component: KnowledgeComponent
   },
   {
     path: '**',
