@@ -42,7 +42,7 @@ import { KnowledgeComponent } from './knowledge/knowledge.component';
     HttpModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAs1aXKPkbboFvuc4cILd337tsK-czn7JA'
+      apiKey: 'xxxxxxxxxxxxxx'
     })
   ],
   providers: [
